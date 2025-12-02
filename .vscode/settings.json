@@ -1,0 +1,35 @@
+{
+  // Executar Code Runner no terminal integrado
+  "code-runner.runInTerminal": true,
+
+  // Mapear a execução de linguagens específicas
+  "code-runner.executorMap": {
+    "typescript": "clear && npx ts-node --files",
+    "javascript": "node"
+  },
+
+  // Formatação automática ao salvar
+  "editor.formatOnSave": true,
+
+  // Aplicar ESLint e Prettier ao salvar
+  "editor.codeActionsOnSave": ["source.fixAll", "source.fixAll.eslint"],
+
+  // Validar arquivos TypeScript, TSX e React
+  "eslint.validate": [
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "javascriptreact"
+  ],
+
+  // Configurações do Prettier (opcional)
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 100,
+  "prettier.tabWidth": 2,
+  "prettier.endOfLine": "lf",
+
+  // Exibir sugestões do ESLint e Prettier
+  "eslint.alwaysShowStatus": true
+}
